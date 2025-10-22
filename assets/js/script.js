@@ -158,10 +158,26 @@
 // let element8 = document.getElementById('exo8');
 // console.log(element8);
 
-// let exoo=''
-// for(let i = 1; i >=5; i++) {
-//     exoo=exoo+i;
-//     let div=document.createElement('div');
-//     div.innerHTML =exoo;
-//     element8.appendChild(div);
-// }
+// Définition d'une fonction appelée "afficherPyramide"
+function afficherPyramide() {
+
+  // --- Première partie : on affiche la montée (de 1 à 5) ---
+
+  // Boucle qui commence à 1 et s'arrête à 5 inclus
+  for (let i = 1; i <= 5; i++) {
+    // Affiche les i premiers caractères de la chaîne "12345"
+    // Par exemple : i=1 → "1", i=2 → "12", etc.
+    console.log("12345".substring(0, i));
+  }
+
+  // --- Deuxième partie : on affiche la descente (de 4 à 1) ---
+
+  // Boucle qui part de 4 et diminue jusqu'à 1
+  for (let i = 4; i >= 1; i--) {
+    // Même principe : on affiche les i premiers chiffres
+    console.log("12345".substring(0, i));
+  }
+}
+
+// Appel de la fonction pour exécuter tout le code ci-dessus
+afficherPyramide();
